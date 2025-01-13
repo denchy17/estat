@@ -3,6 +3,16 @@
     justify-content: center;
     align-items: end;
     padding-bottom: 4vh;
+    width: 100%;
+
+    img {
+        width: 65%;
+        height: auto;
+
+        @media (max-height: 695px) {
+            width: 50%;
+        }  
+    }
 
     &.lila {
         background-color: var(--color-lila);
