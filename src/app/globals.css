@@ -41,3 +41,7 @@
   box-sizing: border-box;
   list-style: none;
 }
+
+body {
+  padding-bottom: 60px;
+}

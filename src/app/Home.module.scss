@@ -1,0 +1,12 @@
+.page {
+  background-color: var(--color-light-gray-porcelain);
+  padding-top: 8px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  min-height: calc(100vh - 60px);
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

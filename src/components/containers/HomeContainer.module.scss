@@ -1,0 +1,6 @@
+.homeContainer {
+    padding: calc(var(--padding-spacing) * 3) calc(var(--padding-spacing) * 3) 0;
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--gap) * 4);
+}
