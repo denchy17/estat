@@ -1,0 +1,35 @@
+.onboard {
+    z-index: 10000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    .statusBar {
+        position: absolute;
+        top: var(--margin-spacing);
+        left: 0;
+        padding: 0 calc(var(--padding-spacing) * 3);
+        width: 100%;
+        display: flex;
+        gap: 6px;
+        height: 4px;
+
+        span {
+            height: 4px;
+            width: 100%;
+            border-radius: 10px;
+            background-color: var(--color-white);
+            opacity: 0.3;
+
+            &.active {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.hidden {
+    display: none;
+}

@@ -1,0 +1,6 @@
+.bottomSlide {
+    display: flex;
+    flex-direction: column;
+    padding: calc(var(--padding-spacing) * 3);
+    background-color: var(--color-light-gray-porcelain);
+}

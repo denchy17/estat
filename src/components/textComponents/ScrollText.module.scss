@@ -1,0 +1,21 @@
+.scrollText {
+    font-size: var(--font-size-button);
+    color: var(--color-dark-gray-charcoal);
+    font-weight: 400;
+    line-height: 25.5px;
+
+    &.small {
+        font-size: var(--font-size-small);
+        line-height: 21px;
+    }
+
+    &.scrollable {
+        overflow-y: scroll;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    &.scrollable::-webkit-scrollbar {
+        display: none;
+    }
+}

@@ -1,0 +1,34 @@
+.slideButtons {
+    position: absolute;
+    z-index: 1000000000;
+    bottom: calc(var(--padding-spacing) * 3);
+    left: 0;
+    align-items: end;
+    display: flex;
+    gap: var(--gap);
+    padding: 0 var(--padding-spacing);
+
+    button {
+        width: 50%;
+        height: 54px;
+        color: var(--color-black);
+        background-color: var(--color-light-gray-frost);
+        border-radius: 100px;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2px;
+        font-size: var(--font-size-button);
+        font-weight: 500;
+
+        &:last-child {
+            color: var(--color-white);
+            background-color: var(--color-black);
+        }
+
+        &.lastButton {
+            width: 100%;
+        }
+    }
+}
