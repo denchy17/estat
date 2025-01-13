@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className={styles.page}>
       <Onboard />
-      Hi
+      Hello
     </div>
   );
 }
