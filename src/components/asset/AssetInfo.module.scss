@@ -1,0 +1,32 @@
+.assetInfo {
+    display: flex;
+    gap: var(--gap);
+    padding-bottom: calc(var(--padding-spacing) * 2);
+
+    img {
+        border: none;
+        border-radius: 16px;
+    }
+
+    .textInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        p {
+            background-color: var(--color-light-gray-mist);
+            border: none;
+            border-radius: 4px;
+            color: var(--color-dark-gray-graphite);
+            font-size: var(--font-size-small);
+            font-weight: 400;
+            padding: 2px;
+            width: fit-content;
+        }
+
+        h2 {
+            font-size: var(--font-size-marked);
+            font-weight: 600;
+        }
+    }
+}

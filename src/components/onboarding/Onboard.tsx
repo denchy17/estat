@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "./Onboard.module.scss";
 
 import Slide from "./Slide";
@@ -8,28 +8,40 @@ import UpperSlide from "./UpperSlide";
 import BottomSlide from "./BottomSlide";
 
 import onboardOne from "@/../public/onboardOne.png";
+import onboardTwo from "@/../public/onboardTwo.png";
+import onboardThree from "@/../public/onboardThree.png";
 
 const slidesData = [
   {
     title: "Invest in tokenised assets!",
     text: "Become an investor and manage stakes in real assets in one click: real estate, startups, art, infrastructure and more...",
-    color: "lila"
+    color: "lila",
+    image: onboardOne,
   },
   {
-    title: "Track Your Portfolio",
-    text: "Stay updated with your portfolio performance and receive timely insights on your investments.",
-    color: "yellow"
+    title: "What is tokenisation?",
+    text: "Tokenisation is the process of dividing any asset into digital shares (tokens) that can be bought, sold or stored",
+    color: "salad-green",
+    image: onboardTwo,
   },
   {
-    title: "Join a Global Community",
-    text: "Connect with like-minded investors and grow your knowledge in tokenised assets.",
-    color: "lila"
-  }
+    title: "What is tokenisation?",
+    text: "Tokenisation is the process of dividing any asset into digital shares (tokens) that can be bought, sold or stored",
+    color: "yellow",
+    image: onboardThree,
+  },
 ];
 
 export default function Onboard() {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [visible, setVisible] = useState(true);
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const hasCompletedOnboarding = localStorage.getItem("hasCompletedOnboarding");
+    if (!hasCompletedOnboarding) {
+      setVisible(true);
+    }
+  }, []);
 
   const handleNext = () => {
     setCurrentSlide((prev) => (prev + 1) % slidesData.length);
@@ -37,6 +49,7 @@ export default function Onboard() {
 
   const handleSkipOrFinish = () => {
     setVisible(false);
+    localStorage.setItem("hasCompletedOnboarding", "true");
   };
 
   return (
@@ -54,7 +67,7 @@ export default function Onboard() {
         </div>
         <Slide>
           <UpperSlide
-            image={onboardOne}
+            image={slidesData[currentSlide].image}
             color={slidesData[currentSlide].color}
           />
           <BottomSlide

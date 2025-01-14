@@ -1,0 +1,54 @@
+.assetStats {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #F0F0F0;
+    width: 100%;
+
+    .value, .dividend {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .value {
+        border-right: 1px solid #F0F0F0;
+        padding-right: 4vw;
+    }
+
+    .mainNumbers {
+        margin-top: var(--padding-spacing);
+
+        p {
+            color: var(--color-dark-gray-charcoal);
+            font-size: var(--font-size-small);
+            font-weight: 400;
+            line-height: 21px;
+        }
+
+        h2 {
+            font-size: var(--font-size-marked);
+            font-weight: 600;
+            line-height: 36px;
+        }
+    }
+
+    .percentage {
+        display: flex;
+        gap: 3px;
+        padding: 5.5px var(--padding-spacing);
+        background-color: var(--color-percentage-backgroung-white);
+        color: var(--color-percentage-text-white);
+        font-size: var(--font-size-small);
+        font-weight: 500;
+        border-radius: 999px;
+        align-items: center;
+
+        span {
+            width: 0.8vw;
+            height: 0.8vw;
+            border: none;
+            border-radius: 100%;
+            background-color: var(--color-percentage-text-black);
+        }
+    }
+}

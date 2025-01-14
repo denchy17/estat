@@ -1,6 +1,9 @@
 .profileComponent {
-    padding: 0 calc(var(--padding-spacing) * 3) 8px;
+    padding: 8px calc(var(--padding-spacing) * 3) 8px;
     border-bottom: 0.5px solid #CDCDCB;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    background-color: var(--color-light-gray-porcelain);
 }

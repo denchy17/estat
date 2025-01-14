@@ -8,6 +8,7 @@
     img {
         width: 65%;
         height: auto;
+        max-width: 285px;
 
         @media (max-height: 695px) {
             width: 60%;
