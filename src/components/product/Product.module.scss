@@ -29,6 +29,18 @@
                 font-weight: 600;
                 font-size: var(--font-size-marked);
             }
+
+            .increase {
+                display: flex;
+                padding: 5.5px var(--padding-spacing);
+                align-items: center;
+                gap: calc(var(--gap) / 2);
+                background-color: var(--color-percentage-backgroung-white);
+                color: var(--color-percentage-text-white);
+                font-size: var(--font-size-small);
+                font-weight: 500;
+                border-radius: 999px;
+            }
         }
     }
 }

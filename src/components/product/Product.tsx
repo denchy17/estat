@@ -1,6 +1,9 @@
 import styles from "./Product.module.scss";
 
 import { Article } from "../containers";
+import { IconImage } from "../imageElements";
+
+import increaseIcon from "@/../public/increase.png";
 
 interface ProductProps {
   image: string | any;
@@ -42,7 +45,8 @@ export default function Product({
         <Article title={title} text={truncatedDescription} size="small" />
             <div className={styles.productNumbers}>
                 <div className={styles.increase}>
-
+                    <IconImage alt="increase" width={24} height={24} imgLink={increaseIcon} />
+                    +{increase}% Increased
                 </div>
                 <div className={styles.ivestmentPrice}>
                     ${ivestmentPrice}
