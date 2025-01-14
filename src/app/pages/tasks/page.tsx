@@ -1,7 +1,9 @@
+import styles from "./Task.module.scss";
+
 export default function Task() {
     return (
-      <div>
-        Task
+      <div className={styles.task}>
+        In progress
       </div>
     );
 }
