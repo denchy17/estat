@@ -1,9 +1,5 @@
-.article {
+.productContainer {
     display: flex;
     flex-direction: column;
     gap: calc(var(--padding-spacing) * 2);
-
-    &.small {
-        gap: var(--padding-spacing);
-    }
 }

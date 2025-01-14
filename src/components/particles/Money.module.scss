@@ -1,0 +1,11 @@
+.money {
+    padding: calc(var(--margin-spacing) / 2) var(--margin-spacing);
+    color: var(--color-dark-gray-ebony);
+    border: none;
+    border-radius: 99px;
+    background-color: var(--color-light-gray-frost);
+    position: fixed;
+    top: 6px;
+    right: calc(var(--padding-spacing) * 3);
+    z-index: 30;
+}

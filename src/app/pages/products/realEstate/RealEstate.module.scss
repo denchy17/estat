@@ -1,0 +1,13 @@
+.realEstate {
+    position: relative;
+    padding: 55px calc(var(--padding-spacing) * 3) 70px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    background-color: var(--color-light-gray-porcelain);
+    min-height: 100vh;
+            
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}

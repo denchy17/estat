@@ -1,0 +1,34 @@
+.product {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-radius: 16px;
+    background-color: var(--color-white);
+
+    .productImage {
+        height: 195px;
+        width: 100%;
+        border-top-right-radius: 16px;
+        border-top-left-radius: 16px;
+    }
+
+    .productProperties {
+        padding: var(--margin-spacing);
+        display: flex;
+        flex-direction: column;
+        gap: var(--margin-spacing);
+
+        .productNumbers {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .ivestmentPrice {
+                color: var(--color-dark-gray-ebony);
+                line-height: 31px;
+                font-weight: 600;
+                font-size: var(--font-size-marked);
+            }
+        }
+    }
+}
