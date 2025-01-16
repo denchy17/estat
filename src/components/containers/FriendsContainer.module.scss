@@ -1,0 +1,82 @@
+.friendsContainer {
+    width: 100%;
+    padding: calc(var(--padding-spacing) * 4) calc(var(--padding-spacing) * 3) 0;
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--gap) * 4);
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    background-color: #FAFAF8;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    transform: translateY(-24px);
+    max-height: calc(100vh - 59px - 109px);
+    min-height: calc(100vh - 59px - 109px);
+        
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    .inviteBlock {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: calc(var(--padding-spacing) * 2);
+
+        .block {
+            width: 100%;
+            background-color: var(--color-white);
+            border-radius: 16px;
+            padding: calc(var(--padding-spacing) * 3);
+
+            h2 {
+                color: var(--color-dark-gray-ebony);
+                font-size: var(--font-size-big);
+                font-weight: 700;
+                line-height: 38px;
+            }
+
+            p {
+                padding: calc(var(--padding-spacing) * 2) 0 calc(var(--padding-spacing) * 3);
+                color: var(--color-dark-gray-charcoal);
+                font-size: var(--font-size-regular);
+                line-height: 24px;
+                font-weight: 400;
+
+                span {
+                    font-weight: 600;
+                }
+            }
+
+            .button {
+                display: flex;
+                align-items: center;
+                gap: 4px;
+                background-color: var(--color-dark-gray-ebony);
+                width: fit-content;
+                padding: var(--padding-spacing) calc(var(--gap) * 2);
+                border-radius: 100px;
+
+                p {
+                    padding: 0;
+                    color: var(--color-white);
+                }
+            }
+        }
+    }
+
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: calc(var(--padding-spacing) * 2);
+
+        h4 {
+            line-height: 21px;
+            font-weight: 500;
+            color: var(--color-dark-gray-iron);
+            font-size: var(--font-size-small);
+        }
+    }
+}

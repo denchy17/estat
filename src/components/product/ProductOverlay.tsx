@@ -56,15 +56,8 @@ export default function ProductOverlay({
               <IconImage imgLink={circle} width={32} height={32} alt="circle" />
               <div className={styles.pointText}>
                 <p>Starting price</p>
-                <h3>${startingPrice}</h3>
-              </div>
-            </div>
-            <div className={styles.point}>
-              <IconImage imgLink={circle} width={32} height={32} alt="circle" />
-              <div className={styles.pointText}>
-                <p>Current price</p>
                 <div className={styles.profitInfo}>
-                  <p>+{plusPrice}$</p>
+                  <p>${startingPrice}</p>
                   <span />
                   <p>{increase}% Increased</p>
                 </div>

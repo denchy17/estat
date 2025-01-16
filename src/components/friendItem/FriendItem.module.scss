@@ -1,0 +1,51 @@
+.friendItem {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: var(--padding-spacing);
+    background-color: var(--color-white);
+    border-radius: 16px;
+    align-items: center;
+
+    .profileInfo {
+        display: flex;
+        align-items: center;
+        gap: var(--padding-spacing);
+
+        img {
+            border-radius: 100%;
+        }
+
+        .names {
+            display: flex;
+            flex-direction: column;
+
+            h2 {
+                color: var(--color-dark-gray-ebony);
+                line-height: 24px;
+                font-size: var(--font-size-regular);
+                font-weight: 600;
+            }
+
+            p {
+                color: var(--color-dark-gray-charcoal);
+                line-height: 21px;
+                font-size: var(--font-size-small);
+                font-weight: 400;
+            }
+        }
+    }   
+    
+    .stonks {
+        display: flex;
+        align-items: center;
+        gap: calc(var(--padding-spacing) * 3);
+
+        .reward {
+            color: var(--color-accent-green);
+            line-height: 27px;
+            font-weight: 600;
+            font-size: var(--font-size-special);
+        }
+    }
+}

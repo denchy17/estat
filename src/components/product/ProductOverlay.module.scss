@@ -61,13 +61,6 @@
                         font-weight: 400;
                     }
 
-                    h3 {
-                        color: var(--color-dark-gray-ebony);
-                        line-height: 24px;
-                        font-weight: 600;
-                        font-size: var(--font-size-regular);
-                    }
-
                     .profitInfo {
                         margin-top: 4px;
                         background-color: var(--color-percentage-backgroung-white);
@@ -98,7 +91,7 @@
             &::before {
                 background-color: rgba(0, 72, 166, 0.2);
                 width: 2px;
-                height: calc(217px - 48px);
+                height: calc(140px - 48px);
                 content: '';
                 position: absolute;
                 top: 24px;

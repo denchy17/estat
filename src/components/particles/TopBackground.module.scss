@@ -1,0 +1,46 @@
+.topBackground {
+    background-color: var(--color-black);
+
+    .gradient {
+        display: flex;
+        justify-content: center;
+        padding: var(--padding-spacing) calc(var(--padding-spacing) * 2) calc(var(--padding-spacing) * 6);
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(
+            45deg, 
+            rgba(165, 47, 234, 0.15), 
+            rgba(47, 184, 234, 0.15), 
+            rgba(80, 47, 234, 0.15)
+        );
+    }
+
+    .info {
+        width: 100%;
+        display: flex;
+        padding: calc(var(--padding-spacing) * 2);
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.15);
+        gap: 6.5px;
+        border-radius: 16px;
+
+        .text {
+            display: flex;
+            flex-direction: column;
+
+            h2 {
+                font-size: var(--font-size-profile-text);
+                font-weight: 600;
+                line-height: 24px;
+                color: var(--color-white);
+            }
+
+            p {
+                font-size: var(--font-size-small);
+                font-weight: 400;
+                line-height: 19px;
+                color: rgba(255, 255, 255, 0.7);
+            }
+        }
+    }
+}

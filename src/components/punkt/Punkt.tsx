@@ -19,13 +19,20 @@ export default function Punkt({ name, punktImage, link }: PunktProps) {
     }
   };
 
+  const backgroundStyle = {
+    backgroundImage: `url(${punktImage.src})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+  };
+
   return (
     <div 
       className={styles.punkt} 
       onClick={handleClick} 
       style={{ cursor: link ? "pointer" : "default" }}
     >
-      <NormalImage imgLink={punktImage} alt={name} />
+      <div className={styles.imageBlock} style={backgroundStyle} />
       <p>{name}</p>
     </div>
   );
