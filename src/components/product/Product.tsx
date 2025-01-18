@@ -13,24 +13,24 @@ interface ProductProps {
   image: string | any;
   title: string;
   description: string;
-  increase: number;
-  ivestmentPrice: number;
-  startingPrice: number;
-  plusPrice: number;
-  plusExpectations: number;
-  expectationsIncrease: number;
+  increase?: number;
+  ivestmentPrice?: number;
+  startingPrice?: number;
+  plusPrice?: number;
+  plusExpectations?: number;
+  expectationsIncrease?: number;
 }
 
 export default function Product({
   image,
   title,
   description,
-  increase,
-  ivestmentPrice,
-  startingPrice,
-  plusPrice,
-  plusExpectations,
-  expectationsIncrease,
+  increase = 0,
+  ivestmentPrice = 0,
+  startingPrice = 0,
+  plusPrice = 0,
+  plusExpectations = 0,
+  expectationsIncrease = 0,
 }: ProductProps) {
     const [showOverlay, setShowOverlay] = useState(false);
 

@@ -2,14 +2,14 @@ import styles from "./AssetStats.module.scss";
 
 interface Props {
     value: number,
-    plusValue: number,
-    plusPercentage: number,
+    plusValue?: number,
+    plusPercentage?: number,
     dividend: number,
-    plusDividend: number,
-    dividendDays: number,
+    plusDividend?: number,
+    dividendDays?: number,
 }
 
-export default function AssetStats({value, plusValue, plusPercentage, dividend, plusDividend, dividendDays} : Props) {
+export default function AssetStats({value, plusValue = 0, plusPercentage = 0, dividend, plusDividend = 0, dividendDays = 0} : Props) {
     const formatNumber = (num: number) => {
         return new Intl.NumberFormat().format(num);
     };

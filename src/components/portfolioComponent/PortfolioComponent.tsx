@@ -5,11 +5,11 @@ import background from "@/../public/background.jpeg";
 interface Props {
     value: number,
     balance: number,
-    plusValue: number,
-    plusPracentage: number,
+    plusValue?: number,
+    plusPracentage?: number,
 }
 
-export default function PortfolioComponent({value, balance, plusValue, plusPracentage} : Props) {
+export default function PortfolioComponent({value, balance, plusValue = 0, plusPracentage = 0} : Props) {
     const portfolioStyle = {
         backgroundImage: `url(${background.src})`,
         backgroundSize: "cover",

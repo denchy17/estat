@@ -12,17 +12,17 @@ interface Props {
     marketValue: string,
     increase: number,
     totalEarning: number,
-    plusValue: number,
-    plusPercentage: number,
-    dividend: number,
-    plusDividend: number,
-    dividendDays: number,
+    plusValue?: number,
+    plusPercentage?: number,
+    dividend?: number,
+    plusDividend?: number,
+    dividendDays?: number,
     onClose: () => void;
 }
 
 export default function AssetOverlay({
     image, number, title, marketValue, increase, totalEarning,
-    plusValue, plusPercentage, dividend, plusDividend, dividendDays, onClose
+    plusValue = 0, plusPercentage = 0, dividend = 0, plusDividend = 0, dividendDays = 0, onClose
 }: Props) {
     const formatNumber = (num: number) => {
         return new Intl.NumberFormat().format(num);
