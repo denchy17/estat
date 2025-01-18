@@ -30,7 +30,7 @@ export default function Home() {
         // Save the response data in state
         setUserData(initializeResponse);
         setLoading(false);
-      } catch (error) {
+      } catch (error: any) {
         console.error("Error fetching data:", error);
         setError(error.message);
         setLoading(false);
